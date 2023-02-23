@@ -12,13 +12,23 @@ document.write(`1. CEVAP : ${yeniDizi.join(" ")}`);
 
 let dizi1 = [3,6,9,14,16];
 
-dizi1.map((element)=>{
-  if(element > 5) {
-    document.write('Beşten büyük bir eleman mevcut.')
-    break
-  } 
-  else {
-    document.write('Beşten büyük bir eleman mevcut değil.')
-    break
+
+let elementIsBiggerThanFive = "";
+dizi1.some((element) => {
+  if (element > 5) {
+    elementIsBiggerThanFive = "Beşten büyük bir eleman mevcut.";
+    return;
   }
+  elementIsBiggerThanFive = "Beşten büyük bir eleman mevcut değil.";
+});
+
+document.write(elementIsBiggerThanFive);
+
+let dizi2 = [2,3,4];
+
+let çarpımSayı = 1;
+let çarpım = dizi2.forEach(function(ever){
+  return çarpımSayı = çarpımSayı * ever
 })
+
+document.write(çarpımSayı)
