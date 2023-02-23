@@ -8,4 +8,4 @@ let yeniDizi = dizi.map(function(sayı) {
 
 console.log(yeniDizi)
 
-document.write(`CEVAP : ${yeniDizi.join(" ")}`);
+document.write(`1. CEVAP : ${yeniDizi.join(" ")}`);
