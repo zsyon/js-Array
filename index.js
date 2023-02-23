@@ -6,12 +6,13 @@ let yeniDizi = dizi.map(function(sayı) {
   }
 });
 
-console.log(yeniDizi)
+document.getElementById("cevap1").innerHTML = (`CEVAP : ${yeniDizi.join(" ")}`)
 
-document.write(`1. CEVAP : ${yeniDizi.join(" ")}`);
+
+
+
 
 let dizi1 = [3,6,9,14,16];
-
 
 let elementIsBiggerThanFive = "";
 dizi1.some((element) => {
@@ -22,8 +23,7 @@ dizi1.some((element) => {
   elementIsBiggerThanFive = "Beşten büyük bir eleman mevcut değil.";
 });
 
-document.write(elementIsBiggerThanFive);
-
+document.getElementById("cevap2").innerHTML = (`CEVAP : ${elementIsBiggerThanFive}`)
 let dizi2 = [2,3,4];
 
 let çarpımSayı = 1;
@@ -31,4 +31,4 @@ let çarpım = dizi2.forEach(function(ever){
   return çarpımSayı = çarpımSayı * ever
 })
 
-document.write(çarpımSayı)
+document.getElementById("cevap3").innerHTML = (`CEVAP : ${çarpımSayı}`)
