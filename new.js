@@ -31,5 +31,15 @@ for (var i = 0; i <= 10; i++) {
     console.log("iç döngü" + j);
   }
  }
+
+
+ cikis_etiketi: for (var i = 0; i <= 5; i++) {
+  for (var j = 0; j <= 50; j++) {
+    if (j == 9) {
+      break cikis_etiketi;
+    }
+    console.log("iç döngüden j :" + j);
+  }
+ }
  
 
